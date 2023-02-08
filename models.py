@@ -58,6 +58,7 @@ class Game(db.Model):
     name = db.Column(db.String(32), nullable=False)
     num_players = db.Column(db.Integer, nullable=False)
     play_time = db.Column(db.String(32))
+    genre = db.Column(db.String(64))
     timestamp = db.Column(
         db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
     )
